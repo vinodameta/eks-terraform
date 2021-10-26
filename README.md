@@ -9,3 +9,7 @@ This will crate a EKS cluster in AWS Infra.
 
 # get Kubeconfig locally with below command.
 1. aws eks update-kubeconfig --name <eks_cluster_name>
+
+# After kube config set up , deploy application as below.
+1. kubectl aplly -f redis-deployment.yml
+2. kubectl aplly -f redis-service.yml
